@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JTGeats</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/39611a63cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navigation-header" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="/" class="brand-logo" aria-label="JTGeats Home">JTGeats</a>
+      <div class="nav-menu">
+        <a href="/" tabindex="0">Home</a>
+        <a href="/about" tabindex="0">About</a>
+        <a href="/menu" tabindex="0">Menu</a>
+        <a href="/blog" tabindex="0">Blog</a>
+        <a href="/contact" tabindex="0">Contact</a>
+      </div>
+      <div class="utility-container" aria-label="Search and cart">
+        <i class='fas fa-search' style="color: white; font-size:20px; " ></i>
+        <i class="fa fa-shopping-cart" style="color: white; font-size:20px;" ></i>
+      </div>
+    </div>
+  </nav>
+<section class="cart-menu">
+  <div class="overlay" id="overlay"></div>
+  <div class="empty-cart-container" id="emptyCartModal" role="dialog" aria-labelledby="cartTitle" aria-modal="true">
+      <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/df47b5e38ad6a76d8b0a020106c9b089fc00efa5ef9964eb355eefb5761ff41c?placeholderIfAbsent=true&apiKey=00dc84fab6374a8a88c51043cca92fed"
+          class="empty-cart-image"
+          alt="Empty shopping cart illustration"
+      />
+      <div class="empty-cart-content">
+          <h2 class="empty-cart-title" id="cartTitle">Cart is Empty</h2>
+          <p class="empty-cart-message">Add some items to the cart to checkout</p>
+      </div>
+      <button 
+          class="back-to-menu-btn" 
+          id="backToMenuBtn"
+          aria-label="Close cart and return to menu">
+          Back to Menu
+      </button>
+  </div>
+</section>
+
+  <section class="hero-section">
+    <div class="content-wrapper">
+      <div class="content-grid">
+        <div class="content-column">
+          <div class="hero-content">
+            <div class="hero-text-container">
+              <h1 class="hero-title">Authentic Home food in India</h1>
+              <p class="hero-description">
+                JTGeats is a courier service in which authentic home cook food is delivered to a customer.
+              </p>
+            </div>
+            <form class="search-container" role="search">
+              <label for="foodSearch" class="visually-hidden">Search food you love</label>
+              <input 
+                type="search" 
+                id="foodSearch" 
+                class="search-input" 
+                placeholder="Search food you love"
+                aria-label="Search food you love"
+              />
+              <button type="submit" class="search-button">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="image-column">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/36d9dc117d609d88019a8338a76b7902f77f6e89cf289321196022e9e74548a9?placeholderIfAbsent=true&apiKey=00dc84fab6374a8a88c51043cca92fed"
+            class="hero-image"
+            alt="Authentic home cooked Indian food illustration"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kitchen-section">
+    <div class="kitchen-container">
+      <h1 class="kitchen-title">Home Kitchen</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="resources/product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product4.jpeg" alt="Product 4">
+          <h3>Product 4</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product4.jpeg" alt="Product 4">
+          <h3>Product 4</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product3.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="resources/product4.jpeg" alt="Product 4">
+          <h3>Product 4</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+    
+  
+        
+        <!-- Repeated product cards with same structure but different images/content -->
+        <!-- Additional product cards follow same template -->
+</div>
+  
+<section class="trending-section">
+  <h2 class="trending-title">Popular Items</h2>
+  <div class="trending-grid">
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- Clone of the last card for seamless looping -->
+        <div class="card clone">
+          <img src="resources/product3.jpg" alt="Kitchen 3">
+          <h3>Kitchen Item 3</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Original cards -->
+        <div class="card">
+          <img src="resources/product1.jpg" alt="Kitchen 1">
+          <h3>Kitchen Item 1</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="resources/product2.jpeg" alt="Kitchen 2">
+          <h3>Kitchen Item 2</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="resources/product3.jpg" alt="Kitchen 3">
+          <h3>Kitchen Item 3</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clone of the first card for seamless looping -->
+        <div class="card clone">
+          <img src="resources/product1.jpg" alt="Kitchen 1">
+          <h3>Kitchen Item 1</h3>
+          <div class="product-info">
+            <span class="product-description">Home-made pizza</span>
+            <span class="product-price">$20</span>
+          </div>
+          <div class="product-details">
+            <div class="product-rating">
+              <span class="fa fa-star"></span>
+              <span>4.7</span>
+              <span class="time">15-20min</span>
+            </div>
+            <div class="product-action">
+              <button class="add-btn">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="control" id="prev">&#10094;</button>
+        <button class="control" id="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+
+   <!-- Request Dish Button -->
+   <button class="request-dish-button" id="requestDishButton" type="button" >Request a Dish</button>
+
+<!-- Modal -->
+<div class="modal-overlay hidden" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+  <div class="modal-container">
+    <h1 id="modal-title" class="modal-title">Request a Dish</h1>
+    <form class="form-container">
+      <div class="input-container">
+        <div class="input-wrapper">
+          <label for="dishName" class="input-label">Name</label>
+          <input 
+            type="text" 
+            id="dishName" 
+            class="text-input" 
+            placeholder="Enter name of the dish" 
+            required 
+            aria-required="true"
+          >
+        </div>
+      </div>
+      <div class="upload-container">
+        <label for="imageUrl" class="input-label">Upload an image</label>
+        <div class="url-input-wrapper">
+          <input 
+            type="url" 
+            id="imageUrl" 
+            class="url-input" 
+            placeholder="Paste a URL" 
+            aria-label="Image URL input"
+          >
+        </div>
+      </div>
+      <div class="button-container">
+        <button 
+          type="button" 
+          class="cancel-button" 
+          aria-label="Cancel request"
+        >Cancel</button>
+        <button 
+          type="submit" 
+          class="submit-button" 
+          aria-label="Submit dish request"
+        >Submit Request</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </section>
+  <div class="food-delivery-section">
+    <div class="background-accent"></div> <!-- Positioned half of the section -->
+    <div class="content-wrapper">
+      <div class="content-header">
+        <div class="header-content">
+          <h2 class="section-title">
+            We are providing best
+            <br />
+            home cooked food delivery service.
+          </h2>
+          <p class="section-description">
+            Away from home and craving the tasty homemade recipes?
+            <br />
+            Choose from a selection of our delicious home cooked dishes
+          </p>
+        </div>
+      </div>
+      <div class="video-container">
+        <video controls class="video" id="custom-video">
+          <source src="resources/video.mp4" type="video/mp4">
+        </video>
+
+        <div id="play-icon" class="play-overlay">▶</div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="contact-wrapper">
+      <div class="contact-section">
+        <div class="contact-content">
+          <form class="form-container">
+            <div class="header-content">
+              <h2 class="main-title">
+                Do you have a question
+                <br />
+                or want to become a seller?
+              </h2>
+              <p class="subtitle">
+                Fill this form and our manager will contact you next 48 hours.
+              </p>
+            </div>
+            <div class="input-group">
+              <input type="text" id="name" class="form-input" placeholder="Your Name" aria-label="Your Name" />
+              <input type="email" id="email" class="form-input" placeholder="Your e-mail" aria-label="Your e-mail" />
+            </div>
+            <textarea id="message" class="message-input" placeholder="Your message" aria-label="Your message"></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/034144f5ee9128afbc25183597f98b956297429fbbd27b3860e8ba74f6ef85af?placeholderIfAbsent=true&apiKey=00dc84fab6374a8a88c51043cca92fed" class="contact-image" alt="Contact illustration" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="primary-footer">
+      <div class="navigation-wrapper">
+        <nav class="header-menu">
+          <div class="brand-logo">JTGeats</div>
+          <div class="nav-links" role="navigation">
+            <a href="#home" tabindex="0" style="text-decoration: none;">Home</a>
+            <a href="#about" tabindex="0" style="text-decoration: none;">About</a>
+            <a href="#menu" tabindex="0" style="text-decoration: none;">Menu</a>
+            <a href="#blog" tabindex="0" style="text-decoration: none;">Blog</a>
+            <a href="#contact" tabindex="0" style="text-decoration: none;">Contact</a>
+          </div>
+          <div class="user-actions">
+            <div class="search-icon-wrapper">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5f0715be68ec812b218444bb2d5bf2a74aabd5e078d26dba790f4934f79d653?placeholderIfAbsent=true&apiKey=00dc84fab6374a8a88c51043cca92fed" class="search-icon" alt="Search" role="button" tabindex="0"/>
+            </div>
+            <div class="cart-icon-wrapper">
+              <button class="cart-button" aria-label="Shopping cart">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1331b70b35ef9999aba13f5f53bb5d82268c9bd6ee085997230799bc7098fb28?placeholderIfAbsent=true&apiKey=00dc84fab6374a8a88c51043cca92fed" class="cart-icon" alt="Shopping cart icon"/>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="divider-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2f4acdb3ee2b10c2f1d33762d336bf3398bab6d5e7ea43f45281b44af5259621?placeholderIfAbsent=true&apiKey=00dc84fab6374a8a88c51043cca92fed" class="divider-line" alt=""/>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
